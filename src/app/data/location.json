@@ -20,6 +20,42 @@
     {
       "roll": 3,
       "location": "Among the treetops"
+    },
+    {
+      "roll": 4,
+      "location": "In the middle of nowhere"
+    },
+    {
+      "roll": 5,
+      "location": "Near a spiritual center"
+    },
+    {
+      "roll": 6,
+      "location": "In or near a desert"
+    },
+    {
+      "roll": 7,
+      "location": "The center of town"
+    },
+    {
+      "roll": 8,
+      "location": "At the edge of a big city"
+    },
+    {
+      "roll": 9,
+      "location": "Underground"
+    },
+    {
+      "roll": 10,
+      "location": "Over a river"
+    },
+    {
+      "roll": 11,
+      "location": "Near a magical place"
+    },
+    {
+      "roll": 12,
+      "location": "Between planes of existence"
     }
   ]
 }
