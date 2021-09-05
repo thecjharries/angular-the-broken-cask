@@ -12,23 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Component, OnInit } from '@angular/core';
-import { TableType } from '../data/data.interfaces'
-import location from '../data/location.json'
+export interface ColumnType {
+  title: string
+  dataProperty: string
+}
 
-@Component({
-  selector: 'app-table-wrapper',
-  templateUrl: './table-wrapper.component.html',
-  styleUrls: ['./table-wrapper.component.less']
-})
-export class TableWrapperComponent implements OnInit {
-
-  public tableType: TableType = location.table;
-  public tableContent: any = location.data;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export interface TableType {
+  title: string
+  columns: Array<ColumnType>
 }
