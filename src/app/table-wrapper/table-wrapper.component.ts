@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import { Component, OnInit } from '@angular/core';
+import location from '../data/location.json'
 
 const LocationTableType: any = {
   columns: [
@@ -33,7 +34,7 @@ const LocationContent: Array<{ roll: number; location: string }> = [
 export class TableWrapperComponent implements OnInit {
 
   public tableType: any = LocationTableType;
-  public tableContent: any = LocationContent;
+  public tableContent: any = location;
 
   constructor() { }
 
