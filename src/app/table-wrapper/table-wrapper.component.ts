@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import { Component, OnInit } from '@angular/core';
+import { TableType } from '../data/data.interfaces'
 import location from '../data/location.json'
 
 @Component({
@@ -22,7 +23,7 @@ import location from '../data/location.json'
 })
 export class TableWrapperComponent implements OnInit {
 
-  public tableType: any = location.table;
+  public tableType: TableType = location.table;
   public tableContent: any = location.data;
 
   constructor() { }
