@@ -19,11 +19,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
+import { TableWrapperComponent } from './table-wrapper/table-wrapper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    TableWrapperComponent
   ],
   imports: [
     BrowserModule

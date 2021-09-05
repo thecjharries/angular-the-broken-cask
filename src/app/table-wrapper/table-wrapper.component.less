@@ -11,33 +11,3 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-
-interface TableType {
-  columns: Array<{ title: string; dataProperty: string; sortable?: boolean; filterable?: boolean }>
-}
-
-@Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.less']
-})
-export class TableComponent implements OnInit, OnChanges {
-
-  @Input()
-  public tableConfig: TableType = {columns:[]};
-
-  @Input()
-  public tableContent: any;
-
-  constructor() {}
-
-  ngOnInit(): void {
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-
-  }
-
-}
