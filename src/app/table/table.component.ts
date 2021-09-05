@@ -14,6 +14,7 @@
 
 import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { TableConfigType } from "../data/data.interfaces";
+import { sanitizeId } from "../helpers/sanitize_id";
 
 
 @Component({
@@ -32,7 +33,7 @@ export class TableComponent implements OnInit, OnChanges {
   constructor() {}
 
   public getSanitizedId(): string {
-    return this.tableConfig.title.toLowerCase().replaceAll(" ", "-").replaceAll("[^\w\-]", "")
+    return sanitizeId(this.tableConfig.title);
   }
 
   ngOnInit(): void {
