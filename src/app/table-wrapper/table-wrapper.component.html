@@ -1,1 +1,1 @@
-<app-table [tableConfig]="tableType" [tableContent]="tableContent"></app-table>
+<app-table *ngFor="let table of tables" [tableConfig]="table.config" [tableContent]="table.content"></app-table>

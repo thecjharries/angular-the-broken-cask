@@ -12,17 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export interface TableColumnType {
-  title: string
-  dataProperty: string
-}
+import { Injectable } from '@angular/core';
+import { StaticDataType } from "./data/data.interfaces";
+import location from './data/location.json';
+import innAndGuestType from './data/inn_and_guest_type.json';
 
-export interface TableConfigType {
-  title: string
-  columns: Array<TableColumnType>
-}
+@Injectable({
+  providedIn: 'root'
+})
+export class StaticDataService {
 
-export interface StaticDataType {
-  config: TableConfigType
-  content: Array<any>
+  constructor() { }
+
+  public getTables(): Array<StaticDataType> {
+    return [
+      location,
+      innAndGuestType,
+    ]
+  }
 }

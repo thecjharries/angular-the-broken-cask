@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import { Component, OnInit } from '@angular/core';
-import { TableType } from '../data/data.interfaces'
-import location from '../data/location.json'
+import { StaticDataService } from "../static-data.service";
+import {StaticDataType} from "../data/data.interfaces";
 
 @Component({
   selector: 'app-table-wrapper',
@@ -23,10 +23,13 @@ import location from '../data/location.json'
 })
 export class TableWrapperComponent implements OnInit {
 
-  public tableType: TableType = location.table;
-  public tableContent: any = location.data;
+  public tables: Array<StaticDataType>
 
-  constructor() { }
+  constructor(
+    private staticDataService: StaticDataService,
+  ) {
+    this.tables = this.staticDataService.getTables()
+  }
 
   ngOnInit(): void {
   }

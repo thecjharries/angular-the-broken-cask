@@ -1,5 +1,5 @@
 {
-  "table": {
+  "config": {
     "title": "Inn and Guest Type",
     "columns": [
       {
@@ -16,7 +16,7 @@
       }
     ]
   },
-  "data": [
+  "content": [
     {
       "roll": 2,
       "innType": "Mystics’ Lodge",

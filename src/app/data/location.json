@@ -1,5 +1,5 @@
 {
-  "table": {
+  "config": {
     "title": "Location",
     "columns": [
       {
@@ -12,7 +12,7 @@
       }
     ]
   },
-  "data": [
+  "content": [
     {
       "roll": 2,
       "location": "Atop a sleeping creature"

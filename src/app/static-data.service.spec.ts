@@ -12,17 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export interface TableColumnType {
-  title: string
-  dataProperty: string
-}
+import { TestBed } from '@angular/core/testing';
 
-export interface TableConfigType {
-  title: string
-  columns: Array<TableColumnType>
-}
+import { StaticDataService } from './static-data.service';
 
-export interface StaticDataType {
-  config: TableConfigType
-  content: Array<any>
-}
+describe('StaticDataService', () => {
+  let service: StaticDataService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(StaticDataService);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
