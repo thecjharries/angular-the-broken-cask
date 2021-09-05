@@ -1,12 +1,18 @@
-<table class="table table-striped" [id]="getSanitizedId()">
-  <thead>
-  <tr>
-    <th *ngFor="let columnHead of tableConfig.columns">{{ columnHead.title }}</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let columnData of tableContent">
-    <td *ngFor="let columnHead of tableConfig.columns">{{ columnData[columnHead.dataProperty] }}</td>
-  </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div class="row">
+    <span class="col-6">{{ tableConfig.title }}</span>
+    <app-roll class="col-6"></app-roll>
+  </div>
+  <table class="table table-striped" [id]="getSanitizedId()">
+    <thead>
+    <tr>
+      <th *ngFor="let columnHead of tableConfig.columns">{{ columnHead.title }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let columnData of tableContent">
+      <td *ngFor="let columnHead of tableConfig.columns">{{ columnData[columnHead.dataProperty] }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
