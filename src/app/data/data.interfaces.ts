@@ -12,17 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export interface ColumnType {
+export interface TableColumnType {
   title: string
   dataProperty: string
 }
 
-export interface TableType {
+export interface TableConfigType {
   title: string
-  columns: Array<ColumnType>
+  columns: Array<TableColumnType>
 }
 
 export interface StaticDataType {
-  table: TableType
-  data: Array<any>
+  config: TableConfigType
+  content: Array<any>
 }
