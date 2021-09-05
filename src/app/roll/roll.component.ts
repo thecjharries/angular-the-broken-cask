@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-roll',
@@ -27,14 +27,15 @@ export class RollComponent implements OnInit {
   @Input()
   public max: number = 0;
 
+  @Output()
+  newRollEvent = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public roll(): number {
-    return Math.random() * (this.max - this.min) + this.min;
+  public roll() {
+    this.newRollEvent.emit(Math.random() * (this.max - this.min) + this.min);
   }
-
-
 }
