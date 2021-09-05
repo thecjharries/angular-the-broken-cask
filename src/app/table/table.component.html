@@ -10,8 +10,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let columnData of tableContent">
-      <td *ngFor="let columnHead of tableConfig.columns">{{ columnData[columnHead.dataProperty] }}</td>
+    <tr *ngFor="let columnData of tableContent; index as index">
+      <td *ngFor="let columnHead of tableConfig.columns" [ngClass]="{'table-success': activeRoll == index}">{{ columnData[columnHead.dataProperty] }}</td>
     </tr>
     </tbody>
   </table>
