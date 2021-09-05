@@ -1,4 +1,4 @@
-<table>
+<table class="table table-striped" [id]="getSanitizedId()">
   <thead>
   <tr>
     <th *ngFor="let columnHead of tableConfig.columns">{{ columnHead.title }}</th>

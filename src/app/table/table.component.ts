@@ -13,10 +13,8 @@
 // limitations under the License.
 
 import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { TableConfigType } from "../data/data.interfaces";
 
-interface TableType {
-  columns: Array<{ title: string; dataProperty: string; sortable?: boolean; filterable?: boolean }>
-}
 
 @Component({
   selector: 'app-table',
@@ -26,12 +24,16 @@ interface TableType {
 export class TableComponent implements OnInit, OnChanges {
 
   @Input()
-  public tableConfig: TableType = {columns:[]};
+  public tableConfig: TableConfigType = {} as any;
 
   @Input()
   public tableContent: any;
 
   constructor() {}
+
+  public getSanitizedId(): string {
+    return this.tableConfig.title.toLowerCase().replaceAll(" ", "-").replaceAll("[^\w\-]", "")
+  }
 
   ngOnInit(): void {
   }
