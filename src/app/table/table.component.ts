@@ -34,7 +34,7 @@ const LocationContent: Array<{ roll: number; location: string }> = [
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.less']
 })
-export class TableComponent<A> implements OnInit {
+export class TableComponent implements OnInit {
 
   @Input()
   public config: TableType;
