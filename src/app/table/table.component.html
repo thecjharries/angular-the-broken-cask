@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <span class="col-6">{{ tableConfig.title }}</span>
-    <app-roll class="col-6"></app-roll>
+    <app-roll class="col-6" (newRollEvent)="roll($event)" [max]="tableContent.length - 1"></app-roll>
   </div>
   <table class="table table-striped" [id]="getSanitizedId()">
     <thead>
@@ -10,7 +10,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let columnData of tableContent; index as index">
+    <tr *ngFor="let columnData of tableContent; index as index" id="{{ getSanitizedId() }}-{{ index }}">
       <td *ngFor="let columnHead of tableConfig.columns" [ngClass]="{'table-success': activeRoll == index}">{{ columnData[columnHead.dataProperty] }}</td>
     </tr>
     </tbody>

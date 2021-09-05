@@ -30,7 +30,7 @@ export class TableComponent implements OnInit, OnChanges {
   @Input()
   public tableContent: any;
 
-  public activeRoll: number = 2;
+  public activeRoll: number = -1;
 
   constructor() {}
 
