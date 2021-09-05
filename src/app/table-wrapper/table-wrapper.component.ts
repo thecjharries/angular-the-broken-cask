@@ -12,25 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// This file was programmatically generated
+import { Component, OnInit } from '@angular/core';
 
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
-import { TableWrapperComponent } from './table-wrapper/table-wrapper.component';
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    TableComponent,
-    TableWrapperComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@Component({
+  selector: 'app-table-wrapper',
+  templateUrl: './table-wrapper.component.html',
+  styleUrls: ['./table-wrapper.component.less']
 })
-export class AppModule { }
+export class TableWrapperComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
