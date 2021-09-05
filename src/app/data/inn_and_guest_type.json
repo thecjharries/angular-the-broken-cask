@@ -1,0 +1,76 @@
+{
+  "table": {
+    "title": "Inn and Guest Type",
+    "columns": [
+      {
+        "title": "2D6",
+        "dataProperty": "roll"
+      },
+      {
+        "title": "Type",
+        "dataProperty": "innType"
+      },
+      {
+        "title": "Guest Type",
+        "dataProperty": "guestType"
+      }
+    ]
+  },
+  "data": [
+    {
+      "roll": 2,
+      "innType": "Mystics’ Lodge",
+      "guestType": "Magical beings, religious "
+    },
+    {
+      "roll": 3,
+      "innType": "Gambling Den",
+      "guestType": "Thieves and thugs"
+    },
+    {
+      "roll": 4,
+      "innType": "Syndicate Hideout",
+      "guestType": "Brigands, crime lords, mercenaries"
+    },
+    {
+      "roll": 5,
+      "innType": "Postal Stop",
+      "guestType": "Couriers and explorers"
+    },
+    {
+      "roll": 6,
+      "innType": "Intellectual House",
+      "guestType": "Philosophers, writers, religious, Keepers"
+    },
+    {
+      "roll": 7,
+      "innType": "Plain Old Pub",
+      "guestType": "Regular townsfolk and laborers"
+    },
+    {
+      "roll": 8,
+      "innType": "Trading House",
+      "guestType": "Merchants and Traders"
+    },
+    {
+      "roll": 9,
+      "innType": "Rumor Mill",
+      "guestType": "Vagrants, performers, townsfolk"
+    },
+    {
+      "roll": 10,
+      "innType": "Exclusive Club",
+      "guestType": "Nobles, the rich, politicians"
+    },
+    {
+      "roll": 11,
+      "innType": "Almshouse",
+      "guestType": "Donors, volunteers, refugees"
+    },
+    {
+      "roll": 12,
+      "innType": "Wretched Hive of Scum & Villainy",
+      "guestType": "Bounty hunters, low lifes, estranged farmhands"
+    }
+  ]
+}
