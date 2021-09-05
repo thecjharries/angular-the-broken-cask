@@ -21,3 +21,8 @@ export interface TableType {
   title: string
   columns: Array<ColumnType>
 }
+
+export interface StaticDataType {
+  table: TableType
+  data: Array<any>
+}
