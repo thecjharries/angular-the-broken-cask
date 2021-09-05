@@ -1,3 +1,23 @@
+# `angular-the-broken-cask`
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Check the NOTICE](https://img.shields.io/badge/Check%20the-NOTICE-420C3B.svg)](./NOTICE)
+
+This project aims to simplify some of the generation from [The Broken Cask](http://www.shorelessskies.com/p/broken-cask.html) by [Shoreless Skies Publishing](http://www.shorelessskies.com/) using [publically available information](https://drive.google.com/file/d/1igJjxqh_k1jstrykBEHyVkMmWt_gy6bq/view?usp=sharing) (from [the downloads page](http://www.shorelessskies.com/p/blog-page.html)).
+
+## Roadmap
+
+* Create a table component that can display the static content on a webpage
+* Add all the static content
+* Add a roll component that can roll dice
+* Wire the two together per table
+* ???
+
+## Boilerplate Below
+
+This is all the Angular boilerplate; it's somewhat useful to me for now because I'm too lazy to have a browser tab with this.
+
 # AngularTheBrokenCask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
