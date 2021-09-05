@@ -1,10 +1,26 @@
-[
-  {
-    "roll": 2,
-    "location": "Atop a sleeping creature"
+{
+  "table": {
+    "title": "Location",
+    "columns": [
+      {
+        "title": "2D6",
+        "dataProperty": "roll"
+      },
+      {
+        "title": "Location",
+        "dataProperty": "location"
+      }
+    ]
   },
-  {
-    "roll": 3,
-    "location": "Among the treetops"
-  }
-]
+  "data": [
+    {
+      "roll": 2,
+      "location": "Atop a sleeping creature"
+    },
+    {
+      "roll": 3,
+      "location": "Among the treetops"
+    }
+  ]
+}
+

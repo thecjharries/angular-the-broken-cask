@@ -15,17 +15,6 @@
 import { Component, OnInit } from '@angular/core';
 import location from '../data/location.json'
 
-const LocationTableType: any = {
-  columns: [
-    {title: "2D6", dataProperty: "roll", sortable: true, filterable: true},
-    {title: "Location", dataProperty: "location", sortable: true, filterable: true},
-  ]
-}
-
-const LocationContent: Array<{ roll: number; location: string }> = [
-  {roll: 2, location: "Atop a sleeping creature"},
-]
-
 @Component({
   selector: 'app-table-wrapper',
   templateUrl: './table-wrapper.component.html',
@@ -33,8 +22,8 @@ const LocationContent: Array<{ roll: number; location: string }> = [
 })
 export class TableWrapperComponent implements OnInit {
 
-  public tableType: any = LocationTableType;
-  public tableContent: any = location;
+  public tableType: any = location.table;
+  public tableContent: any = location.data;
 
   constructor() { }
 
