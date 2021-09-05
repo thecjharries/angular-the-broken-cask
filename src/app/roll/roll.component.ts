@@ -38,4 +38,8 @@ export class RollComponent implements OnInit {
   public roll() {
     this.newRollEvent.emit(Math.floor(Math.random() * (this.max - this.min + 1)) + this.min);
   }
+
+  public clear() {
+    this.newRollEvent.emit(-1)
+  }
 }
