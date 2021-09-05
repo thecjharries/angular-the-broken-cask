@@ -30,10 +30,16 @@ export class TableComponent implements OnInit, OnChanges {
   @Input()
   public tableContent: any;
 
+  public activeRoll: number = -1;
+
   constructor() {}
 
   public getSanitizedId(): string {
     return sanitizeId(this.tableConfig.title);
+  }
+
+  public roll(rollValue: number) {
+    this.activeRoll = rollValue;
   }
 
   ngOnInit(): void {
